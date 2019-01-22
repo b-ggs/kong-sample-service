@@ -1,7 +1,7 @@
-USER ?= bxggs
+_USER ?= bxggs
 PROJECT_NAME ?= kong-sample-service
 
-REPOSITORY := ${USER}/${PROJECT_NAME}
+REPOSITORY := ${_USER}/${PROJECT_NAME}
 TAG ?= 0.0.1
 
 IMAGE := ${REPOSITORY}:${TAG}
