@@ -14,7 +14,7 @@ build:
 run:
 	docker run \
 		-dit \
-		--rm\
+		--rm \
 		--name ${REPOSITORY} \
 		--network ${KONG_NET} \
 		-p ${HOST_PORT}:${CONTAINER_PORT} \
@@ -23,7 +23,7 @@ run:
 run-with-bindmount:
 	docker run \
 		-dit \
-		--rm\
+		--rm \
 		--name ${REPOSITORY} \
 		--network ${KONG_NET} \
 		-p ${HOST_PORT}:${CONTAINER_PORT} \
