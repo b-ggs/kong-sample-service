@@ -36,3 +36,6 @@ run-with-bindmount:
 		-v ./:/root/app \
 		${DOCKER_RUN_ARGS} \
 		${IMAGE}
+
+publish: build
+	docker push ${IMAGE}
