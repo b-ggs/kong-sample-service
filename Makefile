@@ -8,7 +8,7 @@ IMAGE := ${REPOSITORY}:${TAG}
 
 NETWORK ?= kong-net
 
-HOST_PORT ?= 6666
+HOST_PORT ?= 7777
 CONTAINER_PORT := 6666
 
 build:
