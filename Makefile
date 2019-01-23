@@ -31,9 +31,9 @@ run-with-bindmount:
 		-dit \
 		--rm \
 		--name ${CONTAINER_NAME} \
-		--network ${KONG_NET} \
+		--network ${NETWORK} \
 		-p ${HOST_PORT}:${CONTAINER_PORT} \
-		-v ./:/root/app \
+		-v ${PWD}:/root/app \
 		${DOCKER_RUN_ARGS} \
 		${IMAGE}
 
