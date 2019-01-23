@@ -5,7 +5,7 @@ require 'sinatra/json'
 set :bind, '0.0.0.0'
 
 get '/*' do
-  resource_key = ENV['resource']
+  resource_key = ENV['RESOURCE']
   resource =
     case resource_key
     when 'random_engg'
