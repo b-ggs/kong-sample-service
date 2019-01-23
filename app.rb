@@ -21,7 +21,7 @@ get '/*' do
   json(
     message: resource.sample,
     path: request.path_info,
-    debug: {
+    "x-debug" => {
       env: request.env,
       resource_key: resource_key
     }
